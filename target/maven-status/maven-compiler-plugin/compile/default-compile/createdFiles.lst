@@ -1,0 +1,14 @@
+com\visamanager\models\Enums\TypeOfApplication.class
+com\visamanager\models\Application.class
+com\visamanager\interfaces\IClient.class
+com\visamanager\security\SecurityConfig.class
+com\visamanager\VisaManagerApplication.class
+com\visamanager\services\ApplicationService.class
+com\visamanager\controllers\ApplicationController.class
+com\visamanager\models\Enums\StateOfApplication.class
+com\visamanager\repositories\IClientRepository.class
+com\visamanager\services\ClientService.class
+com\visamanager\interfaces\IApplication.class
+com\visamanager\repositories\IApplicationRepository.class
+com\visamanager\controllers\ClientController.class
+com\visamanager\models\Client.class

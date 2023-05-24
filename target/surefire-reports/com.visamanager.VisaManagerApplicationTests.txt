@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.visamanager.VisaManagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.504 s <<< FAILURE! - in com.visamanager.VisaManagerApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/persistence/EntityManagerFactory
+Caused by: java.lang.ClassNotFoundException: javax.persistence.EntityManagerFactory
+

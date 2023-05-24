@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body>
+<header>
+    <nav class="navbar nav-tabs">
+        <ul class="d-flex">
+            <li class="nav-item nav-link"><a href="#" style="text-decoration: none" th:text="Logo"></a></li>
+            <li class="nav-item nav-link"><a href="/" style="text-decoration: none" th:text="Home"></a></li>
+            <li class="nav-item nav-link"><a href="#" style="text-decoration: none" th:text="Immigration"></a></li>
+            <li th:if="${! #authentication.name.equals('anonymousUser')}" class="nav-item nav-link"><a href="/admin/client/getAllClients" style="text-decoration: none" th:text="Clients"></a></li>
+            <li th:if="${! #authentication.name.equals('anonymousUser')}" class="nav-item nav-link"><a href="/admin/application/getAllApplications" style="text-decoration: none" th:text="Applications"></a></li>
+        </ul>
+        <ul class="d-flex">
+            <li th:if="${#authentication.name.equals('anonymousUser')}" class="nav-item nav-link"><a href="/register" class="btn btn-dark" style="text-decoration: none" th:text="Register"></a></li>
+            <li th:if="${#authentication.name.equals('anonymousUser')}" class="nav-item nav-link"><a href="/login" class="btn btn-primary" style="text-decoration: none" th:text="Login"></a></li>
+            <li th:if="${! #authentication.name.equals('anonymousUser')}"class="nav-item nav-link">
+                <a class="btn btn-success" th:text="${#authentication.name}" href="#" style="text-decoration: none"></a>
+            </li>
+            <li th:if="${! #authentication.name.equals('anonymousUser')}" class="nav-item nav-link">
+                <a class="btn btn-danger" href="/logout" style="text-decoration: none" th:text="Logout"></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div layout:fragment="content">
+
+</div>
+
+<footer>
+    <br>
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-link"><a href="#" class="nav-link active">Contact information</a></li>
+        <li class="nav-item nav-link"><a href="#" class="nav-link active">Terms and conditions</a></li>
+        <li class="nav-item nav-link"><a href="#" class="nav-link active">Privacy</a></li>
+    </ul>
+</footer>
+
+
+
+
+</body>
+</html>
